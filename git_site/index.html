@@ -252,6 +252,10 @@
           <!-- ?  INSTRUCTIONS -->
 
           <p class="circle">1</p>
+          <p class="header_instruction">
+            Инициализация. Проверка. Слежение. <br />
+            Прекращение слежения. Запись в репозиторий
+          </p>
           <ol class="text_instruction">
             <li class="items">
               Создать папку проекта, к примеру:
@@ -286,18 +290,136 @@
                 href="assets/images/screenshots/4.git_add.png"
                 >git add . или git add "в кавычках название файла"</a
               >. <br />
-              Прекратить слежку за файлом командой git rm -r --cached "в кавычках
-              название файла".
+              Прекратить слежку за файлом командой
+              <a
+                class="items_link"
+                href="assets/images/screenshots/5.git_rm.png"
+                >git rm -r --cached "в кавычках название файла"</a
+              >.
             </li>
             <li class="items">
               Записываем изменения в репозиторий (создаем точку возврата)
-              командой git commit -m "в скобках прописываем название для
-              коммита"
+              командой
+              <a
+                class="items_link"
+                href="assets/images/screenshots/6.git_commit.png"
+                >git commit -m "в скобках прописываем название для коммита"</a
+              >.
+            </li>
+          </ol>
+
+          <!-- !  @@@@@@@@@@@@    2   @@@@@@@@@@@@ -->
+
+          <p class="circle">2</p>
+          <p class="header_instruction">
+            Файлы которые не должны попасть в систему контроля версий
+          </p>
+          <ol class="text_instruction">
+            <li class="items">
+              Создаем файл
+              <a
+                class="items_link"
+                href="assets/images/screenshots/2.1.gitignore.png"
+                >.gitignore</a
+              >
+              в корневой папке проекта. В него будут вноситься намеренно
+              неотслеживаемые файлы, которые следует игнорировать.
+            </li>
+            <li class="items">
+              Вносим папку
+              <a class="items_link" href="assets/images/screenshots/2.2.png"
+                >.vscode и файл index.html в файл .gitignore и проверяем
+                командой: git status</a
+              >.
+              <p class="important">
+                Файл находится под слежкой и не игнорируется в отличии от папки.
+              </p>
+            </li>
+
+            <li class="items">
+              Добавляем файл .gitignore в наш git командой
+              <a class="items_link" href="assets/images/screenshots/2.3.png"
+                >git add . или git add ".gitignore"</a
+              >.
+            </li>
+            <li class="items">
+              Записываем изменения в репозиторий командой
+              <a class="items_link" href="assets/images/screenshots/2.4.png"
+                >git commit -m "в скобках название коммита"</a
+              >.
+            </li>
+            <p class="important">
+              ВАЖНО!!! Добавленные файлы в игнор лист не будут игнорироваться,
+              если за ними следить командой git add.
+            </p>
+          </ol>
+          <p class="circle">3</p>
+          <p class="header_instruction">Ветки. Branch.</p>
+          <ol class="text_instruction">
+            <li class="items">
+              Комманда для просмотра веток:
+              <a class="items_link" href="assets/images/screenshots/3.1.png"
+                >git branch</a
+              >.
+            </li>
+            <li class="items">
+              Создание новой ветки:
+              <a class="items_link" href="assets/images/screenshots/3.2.png"
+                >git branch "в кавычках название ветки"</a
+              >.
+            </li>
+            <li class="items">
+              Создание ветки и одновременный переход в нее:
+              <a class="items_link" href="assets/images/screenshots/3.3.png"
+                >git checkout -b "название ветки"</a
+              >.
+            </li>
+            <li class="items">
+              Удаление ветки:
+              <a class="items_link" href="assets/images/screenshots/3.4.png"
+                >git checkout "в кавычках название ветки, которую необходимо
+                удалить"</a
+              >.
+            </li>
+            <li class="items">
+              Совмещение веток:
+              <a class="items_link" href="#"
+                >git merge "название ветки"</a
+              >. Добавляет в основную ветку (master) файлов из других источников
+              (разработчиков)
             </li>
           </ol>
         </div>
       </div>
     </section>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
     <br />
     <br />
     <br />
