@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/css.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Git & GitHub</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header_inner">
+          <h1 class="header_title">
+            <b>Git</b> & <b>GitHub</b> <br />for beginners
+          </h1>
+
+          <nav class="nav">
+            <a class="nav_link" href="#">Основы</a>
+            <a class="nav_link" href="#">errors.txt</a>
+            <a class="nav_link" href="#">branch</a>
+            <a class="nav_link" href="#">GitHub</a>
+            <!-- <a class="nav_link" href="#"></a>
+            <a class="nav_link" href="#"></a> -->
+          </nav>
+        </div>
+      </div>
+    </header>
+    <div class="intro">
+      <div class="container">
+        <div class="intro_inner">
+          <p class="intro_text">
+            Git - это система контроля версий, позволяющая эффективно управлять
+            историей исходного кода. <br />Любые изменения которые ты вносишь в
+            проект могут быть сохранены с помощью Git. <br />Ты можешь вернуться
+            к любым ранее сохраненным версиям.<br />
+            Без Git пришлось бы создавать копии проекта, что было бы проблемой
+            при увеличении объема кода в приложении. На текущий момент Git —
+            стандарт для разработки.
+          </p>
+        </div>
+      </div>
+      <div class="container">
+        <div class="intro_footer">
+          <h1 class="header_title"><b>Git</b> и <b>GitHub</b></h1>
+          <p class="intro_text">
+            Для начинающих может быть непонятна разница между этими терминами.
+          </p>
+          <div class="intro_description">
+            <p class="description_text">
+              Git​ <br />
+              система контроля версий. Технология, которую можно скачать на
+              компьютер.
+            </p>
+            <p class="description_text">
+              Github​ <br />
+              сервис, который позволяет работать с твоими Git проектами. Это
+              называется репозитории. Помимо Github существуют другие сервисы
+              (например Bitbucket, GitLab).
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- !  *PAGE TWO -->
+
+    <div class="page_two">
+      <div class="container">
+        <div class="install">
+          <h1 class="header_title">Как установить Git</h1>
+          <p>
+            Это бесплатная технология и скачать ее можно тут:
+            <a class="nav_link" href="https://git-scm.com/downloads"
+              ><b>https://git-scm.com/downloads</b></a
+            >
+            <br />
+            Запускается через командную строку или терминал с команды git.
+            <br />
+            В этом практическом курсе можно познакомиться с его основами.
+            <br />Git и GitHub для начинающих:​
+            <a
+              class="nav_link"
+              href="https://www.youtube.com/watch?v=zZBiln_2FhM"
+              ><b>https://www.youtube.com/watch?v=zZBiln_2FhM</b></a
+            >
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- ! START TABLE -->
+    <!-- ?@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
+    <div class="git_commands">
+      <div class="container">
+        <h1 class="header_table">Основные команды</h1>
+
+        <!-- ! ПОДЗАГЛАВИЕ command_title -->
+        <p class="about_command">
+          <span class="command_title">git init</span>
+          <span class="command_text"
+            >Позволяет проинициализировать репозиторий в текущей папке</span
+          >
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git status</span>
+          <span class="command_text">Показывает текущий статус</span>
+        </p>
+        <p class="about_command">
+          <span class="command_title">git add</span
+          ><span class="command_text"> Отслеживает изменения файлов</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git add index.html</span
+          ><span class="to_command"> Добавляет index.html </span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git add .​</span
+          ><span class="to_command">Добавляет все файлы</span>
+        </p>
+
+        <!--  -->
+        <p class="about_command">
+          <span class="command_title">git commit</span>
+          <span class="command_text"> Сохраняет изменения в коммит</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git commit -m 'commit message'​</span
+          ><span class="to_command">создает коммит с сообщением </span>
+        </p>
+        <p class="about_command">
+          <span class="command_title">git branch</span
+          ><span class="command_text">Работа с ветками в репозитории</span>
+        </p>
+
+        <p class="about_command">
+          <span class="command_name">git branch​</span
+          ><span class="to_command">Показывает список веток</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git branch branch-name</span
+          ><span class="to_command">создает новую ветку</span>
+        </p>
+
+        <p class="about_command">
+          <span class="command_name">git branch -D branch-name</span
+          ><span class="to_command">удаляет ветку branch-name</span>
+        </p>
+        <p class="about_command">
+          <span class="command_title">git checkout</span
+          ><span class="command_text">Переключается на другую ветку </span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git checkout branch-name</span
+          ><span class="to_command"
+            >переключается на последний коммит в ветке branch-name</span
+          >
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git checkout -b branch-name</span
+          ><span class="to_command"
+            >создает и переключается на ветку branch-name</span
+          >
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git merge</span
+          ><span class="command_text"
+            >Совмещает текущую ветку с выбранной
+          </span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git merge branch-name</span
+          ><span class="to_command"
+            >совмещает текущую ветку с branch-name</span
+          >
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git config</span
+          ><span class="command_text">Конфигурация и параметры git</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git config --global user.name</span
+          ><span class="to_command">Показывает имя пользователя</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name"
+            >git config --global user.name 'new user'</span
+          ><span class="to_command">Изменяет имя пользователя</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name">git config --global user.email</span
+          ><span class="to_command">Показывает email пользователя</span>
+        </p>
+
+        <p class="subcommand">
+          <span class="command_name"
+            >git config --global user.email 'test@mail.ru'</span
+          ><span class="to_command">Изменяет email пользователя</span>
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git push</span>
+          <span class="command_text"
+            >Заливает текущие локальные коммиты в удаленный репозиторий</span
+          >
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git pull</span>
+          <span class="command_text"
+            >Забирает изменения с удаленного репозитория в локальный</span
+          >
+        </p>
+
+        <p class="about_command">
+          <span class="command_title">git clone</span>
+          <span class="command_text"
+            >Клонирует проект с удаленного репозитория</span
+          >
+        </p>
+      </div>
+    </div>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+  </body>
+</html>
