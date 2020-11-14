@@ -85,7 +85,7 @@
             <a
               class="nav_link"
               href="https://www.youtube.com/watch?v=zZBiln_2FhM"
-              ><b>https://www.youtube.com/watch?v=zZBiln_2FhM</b></a
+              ><b> https://www.youtube.com/watch?v=zZBiln_2FhM</b></a
             >
           </p>
         </div>
@@ -234,13 +234,67 @@
       </div>
     </div>
 
+    <!-- ?  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ -->
     <!-- !  Chapter 3-->
+
+    <!-- ? TITLE -->
+
     <section class="section">
       <div class="container">
         <div class="sbs_instruction">
-          <h1 class="header_instruction">Пошаговые инструкции</h1>
+          <h1 class="header_instruction">
+            <span class="header_instruction big">Пошаговые инструкции.</span>
+            <br />
+            Все ниже описанное делаем в терминале. <br />
+            В материале присутствуют скриншоты.
+          </h1>
+
+          <!-- ?  INSTRUCTIONS -->
+
           <p class="circle">1</p>
-          <h1 align="center">И опять пиздец, поехали четверть отвозить, заебали))) вот такая работа и учеба))))</h1>
+          <ol class="text_instruction">
+            <li class="items">
+              Создать папку проекта, к примеру:
+              <a
+                class="items_link"
+                href="assets/images/screenshots/1.create_directory.png"
+                >git_site</a
+              >.
+            </li>
+            <li class="items">
+              Инициализация репозитория (создается папка .git) командой:
+              <a
+                class="items_link"
+                href="assets/images/screenshots/2.git_init.png"
+              >
+                git init.</a
+              >
+            </li>
+            <li class="items">
+              Создать файл или вставить готовые файлы в папку: git_site и
+              проверить командой:<a
+                class="items_link"
+                href="assets/images/screenshots/3.git_status.png"
+              >
+                git status.</a
+              >
+            </li>
+            <li class="items">
+              Начать слежку за созданными/вставленными фалами командой
+              <a
+                class="items_link"
+                href="assets/images/screenshots/4.git_add.png"
+                >git add . или git add "в кавычках название файла"</a
+              >. <br />
+              Прекратить слежку за файлом командой git rm -r --cached "в кавычках
+              название файла".
+            </li>
+            <li class="items">
+              Записываем изменения в репозиторий (создаем точку возврата)
+              командой git commit -m "в скобках прописываем название для
+              коммита"
+            </li>
+          </ol>
         </div>
       </div>
     </section>
