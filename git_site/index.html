@@ -19,10 +19,11 @@
           </h1>
 
           <nav class="nav">
-            <a class="nav_link" href="#">Основы</a>
-            <a class="nav_link" href="#">errors.txt</a>
-            <a class="nav_link" href="#">branch</a>
-            <a class="nav_link" href="#">GitHub</a>
+            <a class="nav_link" href="#Основы">Основы</a>
+            <a class="nav_link" href="#Инициализация">Инициализация</a>
+            <a class="nav_link" href="#Gitignore">Gitignore</a>
+            <a class="nav_link" href="#Branch">Branch</a>
+            <a class="nav_link" href="#GitHub">GitHub</a>
             <!-- <a class="nav_link" href="#"></a>
             <a class="nav_link" href="#"></a> -->
           </nav>
@@ -71,7 +72,7 @@
     <div class="page_two">
       <div class="container">
         <div class="install">
-          <h1 class="header_title">Как установить Git</h1>
+          <h1 class="header_title"><a name="Основы"> Как установить Git</a></h1>
           <p>
             Это бесплатная технология и скачать ее можно тут:
             <a class="nav_link" href="https://git-scm.com/downloads"
@@ -243,13 +244,16 @@
       <div class="container">
         <div class="sbs_instruction">
           <h1 class="header_instruction">
-            <span class="header_instruction big">Пошаговые инструкции.</span>
+            <span class="header_instruction big"
+              ><a name="Инициализация">Пошаговые инструкции.</a></span
+            >
             <br />
-            Все ниже описанное делаем в терминале. <br />
+            Все ниже описаное делаем в терминале. <br />
             В материале присутствуют скриншоты.
           </h1>
 
           <!-- ?  INSTRUCTIONS -->
+          <!-- !  @@@@@@@@@@@@    4   @@@@@@@@@@@@ -->
 
           <p class="circle">1</p>
           <p class="header_instruction">
@@ -310,7 +314,7 @@
 
           <!-- !  @@@@@@@@@@@@    2   @@@@@@@@@@@@ -->
 
-          <p class="circle">2</p>
+          <a name="Gitignore"><p class="circle">2</p></a>
           <p class="header_instruction">
             Файлы которые не должны попасть в систему контроля версий
           </p>
@@ -353,7 +357,10 @@
               если за ними следить командой git add.
             </p>
           </ol>
-          <p class="circle">3</p>
+
+          <!-- !  @@@@@@@@@@@@    3   @@@@@@@@@@@@ -->
+
+          <a name="Branch"><p class="circle">3</p></a>
           <p class="header_instruction">Ветки. Branch.</p>
           <ol class="text_instruction">
             <li class="items">
@@ -383,78 +390,86 @@
             </li>
             <li class="items">
               Совмещение веток:
-              <a class="items_link" href="#"
-                >git merge "название ветки"</a
-              >. Добавляет в основную ветку (master) файлов из других источников
+              <a class="items_link" href="#">git merge "название ветки"</a>.
+              Добавляет в основную ветку (master) файлов из других источников
               (разработчиков)
             </li>
+          </ol>
+          <!-- !  @@@@@@@@@@@@    4   @@@@@@@@@@@@ -->
+
+          <a name="GitHub"><p class="circle">4</p></a>
+          <p class="header_instruction">Добавление в GitHub</p>
+          <ol class="text_instruction">
+            <li class="items">
+              Заходим на сайт
+              <a class="items_link" href="https://github.com/"
+                >https://github.com/</a
+              >, авторизовываемся, справа вверху выбираем
+              <a class="items_link" href="assets/images/screenshots/4.1.png"
+                >Your repositories</a
+              >
+            </li>
+            <li class="items">
+              В открывшемся окне жмем кнопку
+              <a class="items_link" href="assets/images/screenshots/4.2.png">
+                New</a
+              >.
+            </li>
+            <li class="items">
+              В открывшемся окне прописываем название репозитория, выбраем
+              публичный или приватный и жмем кнопку
+              <a class="items_link" href="assets/images/screenshots/4.3.png">
+                Create repository</a
+              >
+              и попадаем на
+              <a class="items_link" href="assets/images/screenshots/4.3.2.png">
+                следующую страницу</a
+              >
+            </li>
+            <li class="items">
+              Возвращаемся в консоль и вносим наши данные: username и email, для
+              связи Git с GitHub командами <br />
+              <a class="items_link" href="assets/images/screenshots/4.4.png">
+                git config --global user.name Belykh-Alexej <br />
+                git config --global user.email Bilykh.Oleksii@gmail.com</a
+              >.
+            </li>
+            <li class="items">
+              Заливаем на GitHub: (пункт 4.3) внести 2 последние ссылки в
+              терминал:
+              <br />
+              <a class="items_link" href="assets/images/screenshots/4.2.png">
+                git remote add origin
+                https://github.com/Belykh-Alexej/new-repository.git <br />
+                git push -u origin <span class="important">main</span></a
+              >.
+              <p class="important">
+                ВАЖНО!!! main-имя ветки, по умолчанию название ветки master.
+              </p>
+            </li>
+          </ol>
+
+          <!-- !  @@@@@@@@@@@@    5   @@@@@@@@@@@@ -->
+
+          <p class="circle">5</p>
+          <p class="header_instruction">
+            Добавление изменений из VScode в репозиторий на GitHub.
+          </p>
+          <ol class="text_instruction">
+            <li class="items">git status</li>
+
+            <li class="items">git add .</li>
+
+            <li class="items">git status</li>
+
+            <li class="items">git commit -m "в скобках название коммита".</li>
+
+            <li class="items">git status</li>
+
+            <li class="items">git push</li>
           </ol>
         </div>
       </div>
     </section>
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
   </body>
 </html>
